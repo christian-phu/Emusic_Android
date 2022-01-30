@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.thv.hoangvu.appnhac">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:largeHeap="true"
+        android:hardwareAccelerated="true">
+        <activity
+            android:name="com.thv.hoangvu.Emusic.Activity.Register"
+            android:exported="true" />
+        <activity
+            android:name="com.thv.hoangvu.Emusic.Activity.Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.thv.hoangvu.Emusic.Activity.MainActivity"></activity>
+        <activity android:name="com.thv.hoangvu.Emusic.Activity.DanhSachBaiHatActivity" />
+        <activity android:name="com.thv.hoangvu.Emusic.Activity.DanhSachPlaylistActivity" />
+        <activity android:name="com.thv.hoangvu.Emusic.Activity.DanhSachChuDeActivity" />
+        <activity android:name="com.thv.hoangvu.Emusic.Activity.DanhSachTheLoaiTheoChuDeActivity" />
+        <activity android:name="com.thv.hoangvu.Emusic.Activity.DanhSachAlbumActivity" />
+        <activity android:name="com.thv.hoangvu.Emusic.Activity.PlayNhacActivity" />
+        <activity
+            android:name="com.thv.hoangvu.Emusic.Fragment.Settings"
+            android:exported="true" />
+        <activity
+            android:name="com.thv.hoangvu.Emusic.Fragment.AboutThisApp"
+            android:exported="true" />
+    </application>
+
+</manifest>
